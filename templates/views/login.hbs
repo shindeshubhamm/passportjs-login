@@ -1,0 +1,16 @@
+{{#> layout title='Login'}}
+<h1>Login</h1>
+<form method="POST" action="/login">
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+    <small id="emailHelp" class="form-text text-muted">Enter email you registered.</small>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" id="password" class="form-control" name="password" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
+<small class="text-muted">Don't have an account? <a href="/register">Register</a></small>
+{{/layout}}

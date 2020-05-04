@@ -4,25 +4,20 @@
   "description": "PassportJS authentication demo project",
   "main": "index.js",
   "scripts": {
-    "dev": "env-cmd nodemon server.js"
+    "dev": "env-cmd nodemon server.js -e js,hbs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/ShindeShubhamm/passportjs-login.git"
-  },
-  "keywords": [
-    "passport-js-demo"
-  ],
+  "keywords": [],
   "author": "Shubham Shinde shubhamshinde.3151@gmail.com",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ShindeShubhamm/passportjs-login/issues"
-  },
-  "homepage": "https://github.com/ShindeShubhamm/passportjs-login#readme",
   "dependencies": {
+    "bcrypt": "^4.0.1",
     "env-cmd": "^10.1.0",
     "express": "^4.17.1",
-    "hbs": "^4.1.1"
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "hbs": "^4.1.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
