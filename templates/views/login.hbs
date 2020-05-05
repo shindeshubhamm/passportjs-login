@@ -1,5 +1,11 @@
 {{#> layout title='Login'}}
 <h1>Login</h1>
+{{#if messages.error }}
+<div class="alert alert-danger" role="alert">
+  {{messages.error}}
+</div>
+{{/if}}
+
 <form method="POST" action="/login">
   <div class="form-group">
     <label for="email">Email</label>

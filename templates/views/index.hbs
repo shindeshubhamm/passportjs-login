@@ -1,3 +1,14 @@
 {{#> layout title="Home"}}
-<h1>Hi, {{name}}</h1>
+
+<div class="card w-75 my-2">
+  <div class="card-body">
+    <h5 class="card-title">Hi {{name}},</h5>
+    <p class="card-text">This is demo showing the use of Passport.js utility.</p>
+    <a href="http://www.passportjs.org/" class="btn btn-info" target="_blank">More about
+      <samp class="text-white">Passport.js</samp></a>
+  </div>
+</div>
+<form action="/logout?_method=DELETE" method="POST">
+  <button type="submit" class="btn btn-dark">Logout</button>
+</form>
 {{/layout}}
